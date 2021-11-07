@@ -23,10 +23,11 @@ class Server extends EventEmitter {
     }
 
     help() {
-        this.emit('response', `Available commands:
-        add task
-        ls
-        delete :id`);
+        this.emit('response',
+`Available commands:
+    add task
+    ls
+    delete :id`);
     }
 
     add(args) {
